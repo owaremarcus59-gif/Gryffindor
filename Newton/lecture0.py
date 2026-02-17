@@ -1,11 +1,10 @@
-# first python program
+# Learning Python - Lecture 0
 print("Hello world")
 
-name = input("what is your name:")
-print(f'Hello, {name} '+' 12')
+name = input("What is your name: ")
+print(f"Hello, {name} ")
 
 # removing spaces with the strip() function
-name = input('Enter your name:')
-name = name. strip().capitalize
-
-print("Hello")
+name = input("Enter your name:")
+name = name.strip().capitalize()
+print(f"Hello, {name}!")
