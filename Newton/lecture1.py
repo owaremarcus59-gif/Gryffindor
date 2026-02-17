@@ -71,5 +71,5 @@ def check_out():
         case "wednesday":
             print("You need prayers")        
     
-       
+# To be continued in the next lecture       
     
