@@ -15,13 +15,4 @@ def parity():
         return "Invalid type: Input must be a number."
 output = parity()
 print(output)
-def parity():
-    try:
-        num= int(input("Enter a number: "))
-        return "Even" if num % 2 == 0 else "Odd"
-    
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
-consult = parity()
-print(consult)    
+
