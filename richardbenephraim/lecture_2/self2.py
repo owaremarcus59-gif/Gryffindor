@@ -37,8 +37,6 @@ def get_user_input():
 
     return amount, Source, Target
 
-
-
 """
 define a function to control the flow of the conversion
 use match-case for the initial flow then
@@ -46,8 +44,13 @@ use if -else for checking the source And target choice
 """
 
 def choice():
-
-    message = input (f"\n{"*"*10} CUURENCY CONVERTER {"*"*10} \npress '1' to continue or 'n' to exit: \n").strip().lower()
+    header = f"*"*10, "CURRENCY CONVERTER", f"*"*10 
+    message = input (
+        f"\n{header}\n"
+        f"\npress 1 continue \n"
+        f"press 'n' to exit\n"
+        "Enter your desire choice: \n"
+    ).strip().lower()
     print()
 
     match message:

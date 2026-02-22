@@ -5,3 +5,17 @@ users to add tasks, view the current list of tasks, and remove tasks once they a
 completed.
 
 """
+
+import json
+from json import JSONDecodeError
+
+def main():
+    pass
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
