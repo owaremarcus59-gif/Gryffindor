@@ -1,6 +1,5 @@
 '''Building to_do_list '''
 
-
 def to_do_list():
     pass
 
