@@ -9,11 +9,12 @@ lights = [
     ('green', 2)
 ]
 colors = cycle(lights)
-while True:
+n = 10
+while n != 0 :
     color, duration = next(colors)
     print(color)
     time.sleep(duration)
-    
+    n -= 1   
 
 '''I didn`t understand the color, duration = next(colors), Ai gave them to me and I still don`t know how they work, I know that next(colors) gives me the next item in the cycle, but I don`t understand how it gives me the color and duration separately. I think it has something to do with the way the lights list is structured, but I`m not sure.'''
     # c,s = next(colors)
