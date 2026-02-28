@@ -251,12 +251,16 @@ def file_sorter():
             document = os.mkdir(f"{root_downloads_folder}/DOCUMENT_FILES")
         else:
             return "document folder found"
+        
         if "SOFTWARE_FILES" not in path:
             software = os.mkdir(f"{root_downloads_folder}/SOFTWARE_FILES")
         else:   
             return "software  folder found "
+        
         if "PICTURE_FILES" not in path:
             picture = os.mkdir(f"{root_downloads_folder}/PICTURE_FILES")
+        else:
+            return "picture folder found"
             
     except (FileExistsError):
         return "file exist"
@@ -308,7 +312,7 @@ def sorting_operations_Downloads():
                     print(e)
             elif file.endswith((".jpg", ".jpeg", ".png", ".gif", ".bmp", "webp", ".tiff", ".svg")):
                 try:
-                    shutil.move(src=f"{path}/{file}", dst=f"{path}/DOCUMENT_FILES")
+                    shutil.move(src=f"{path}/{file}", dst=f"{path}/PICTURE_FILES")
                 except (FileExistsError, FileNotFoundError) as e:
                     print(e)
 
