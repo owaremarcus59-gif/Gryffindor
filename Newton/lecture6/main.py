@@ -16,9 +16,15 @@
 # print("I Love you")
 # file.close()
               
-import pytube
+
+from yt_dlp import YoutubeDL
 
 
 url = "https://youtu.be/nfstvFhWQXQ?si=lf2uneXJ2xg8mc0R"
-stream = pytube.YouTube(url)
-stream.streams.get_highest_resolution().download()
+yt_opts = {}
+
+with YoutubeDL(yt_opts) as dd:
+    dd.download(url)
+
+
+
