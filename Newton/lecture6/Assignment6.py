@@ -1,7 +1,7 @@
 import cv2
 
 # Load the video
-video = cv2.VideoCapture("/home/nba-young-boy/Documents/openlabsschool/Gryffindor/Newton/lecture6/JW2.mp4")
+video = cv2.VideoCapture("lecture6/JW2.mp4")
 success, frame = video.read()
 count = 0
 
