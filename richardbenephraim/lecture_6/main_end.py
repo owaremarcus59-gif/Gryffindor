@@ -7,9 +7,14 @@
 
 
 from PIL import Image, ImageChops
+from os import path 
 
-img1 = Image.open("./files/a.JPG")
-climg2 = Image.open("./files/b.JPG")
+base_dir = path.join("files", "a.JPG")
+base_dir2 = path.join("files", "b.JPG")
+
+
+img1 = Image.open(base_dir)
+climg2 = Image.open(base_dir2)
 
 difference = ImageChops.difference(img1,climg2)
 
