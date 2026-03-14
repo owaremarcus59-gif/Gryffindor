@@ -14,4 +14,4 @@ def my_sys_func():
             print("too few argument ")
 
 
-if __name__ ==   
+if __name__ ==   cd
